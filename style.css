@@ -38,17 +38,17 @@
 
 .first {
     clear: both;
-    text-align: center;
     display: block;
     box-sizing: border-box;
     margin-bottom: 35px;
+    text-align: center;
 }
 
 .second {
+    clear: both;
     display: block;
     box-sizing: border-box;
     margin-bottom: 10px;
-    clear: both;
 }
 
 .second div {
@@ -60,6 +60,10 @@
     color: #000;
     text-align: center;
     font-weight: 600;
+}
+
+.second div:hover {
+    opacity: 0.8;
 }
 
 #mac {
@@ -78,13 +82,13 @@
     background-color: rgb(153,	188, 196);
 }
 
-.third, .fourth, .fifth, .sixth, .seventh {
+.third, .fourth, .fifth, .sixth {
     clear: both;
-    display: block;
+    display: flex;
     box-sizing: border-box;
 }
 
-.third div {
+.third div, .fourth div, .fifth div {
     float: left;
     box-sizing: border-box;
     padding: 25px;
@@ -99,9 +103,9 @@
     background-color: rgba(183, 208, 213, 0.9);
 }
 
-#third-left img {
-    width: 250.5px;
-    height: 276px;
+#third-left img, #fourth-right img, #fifth-left img {
+    width: 250px;
+    height: 250px;
 }
 
 #third-right {
@@ -119,50 +123,18 @@ h2 {
     text-indent: 15px;
 }
 
-.fourth div {
-    float: left;
-    box-sizing: border-box;
-    padding: 25px;
-    margin: 0px;
-    width: 50%;
-    color: #fff;
-    text-align: center;
-    font-weight: 400;
-}
-
 #fourth-left {
     background-color: rgba(187, 187, 144);
     padding: 35px;
-    text-align: justify;
     line-height: 25px;
-}
-
-#fourth-right img {
-    width: 250px;
-    height: 226px;
-}
-
-.fifth div {
-    float: left;
-    box-sizing: border-box;
-    padding: 25px;
-    margin: 0px;
-    width: 50%;
-    color: #fff;
-    text-align: center;
-    font-weight: 400;
-}
-
-#fifth-left img {
-    width: 200px;
-    height: 251px;
+    text-align: justify;
 }
 
 #fifth-right {
     background-color: rgba(255, 72, 0, 0.671);
     padding: 35px;
-    text-align: justify;
     line-height: 25px;
+    text-align: justify;
 }
 
 .sixth div {
@@ -187,6 +159,9 @@ h2 {
 }
 
 .seventh {
+    display: block;
+    clear: both;
+    box-sizing: border-box;
     background-color: rgba(0, 89, 130, 0.7);
     padding: 10px;
     text-align: center;
@@ -206,7 +181,6 @@ hr {
 }
 
 .footer {
-    clear: both;
     background-color: rgb(83, 35, 83);
     margin-top: 0px;
     padding: 15px;
